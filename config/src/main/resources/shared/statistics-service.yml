@@ -10,7 +10,7 @@ security:
 spring:
   data:
     mongodb:
-      host: statistics-mongodb
+      host: localhost
       username: user
       password: ${MONGODB_PASSWORD}
       database: piggymetrics
@@ -22,3 +22,4 @@ server:
 
 rates:
   url: http://api.fixer.io
+
