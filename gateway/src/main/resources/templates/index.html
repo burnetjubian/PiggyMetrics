@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<htmL>
+<htmL xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout/layout}">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=1150, user-scalable=no">
@@ -24,6 +25,7 @@
 </head>
     <body>
 
+    <section layout:fragment="content">
         <div id="settings_hat"></div>
 
         <div id="lastlogo">
@@ -494,6 +496,6 @@
         <script src="js/main.js" charset="utf-8"></script>
         <script src="js/login.js" charset="utf-8"></script>
         <script src="js/launch.js" charset="utf-8"></script>
-
+    </section>
     </body>
 </html>
